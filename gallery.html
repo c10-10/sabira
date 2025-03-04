@@ -1,0 +1,157 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - School Website</title>
+</head>
+
+<body>
+    <div class="header">
+        <img class="logo" src="himchuli logo.jpg" height="80px">
+        <ul class="nav-menu">
+            <li class = "nav-item"><a href="home.html">HOME</a></li>
+            <li class = "nav-item"><a href="contact.html">CONTACT US</a></li>
+            <li class = "nav-item"><a href="about.html">ABOUT US</a></li>
+            <li class = "nav-item"><a href="notices.html">NOTICES</a></li>
+            <li class = "nav-item"><a href="gallery.html">GALLERY</a></li>
+        </ul>
+    </div>
+
+    <div class="gallery">
+        <h1>School Gallery</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="ha1.jpg" alt=" ">
+            </div>
+            <div class="gallery-item">
+                <img src="ha2.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="ha3.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="ha4.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="ha5.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="ha6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Navbar Styles */
+.header {
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center; /* Centers the nav menu horizontally */
+    align-items: center; /* Aligns items vertically */
+    width: 100%;
+    padding: 5px 0;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    
+    gap: 50px; /* Adjusts spacing between menu items */
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav-menu li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item > a {
+    text-decoration: none; 
+    color: darkred;
+    font-size: 30px;
+    
+}
+
+
+
+.logo {
+    border-radius: 50%;
+}
+
+     
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Remove bullet points only from specific lists */
+ul:not(.nav-menu) {
+    margin: 20px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul:not(.nav-menu) li {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 8px 0;
+    list-style-type: square;
+    color: #007bff;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery h1 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+</style>
+</body>
+</html>
